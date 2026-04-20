@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>💻 03 Devs</title>
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Partículas -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  
+  <!-- Three.js para o Modelo 3D -->
+  <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- CURSOR (Desktop apenas) -->
+  <div class="cursor"></div>
+
+  <!-- PARTICLES -->
+  <div id="particles-js"></div>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">
+      <div class="logo-container">
+        <img src="logo.png" class="logo-img" alt="Logo">
+        <div class="logo-glow"></div>
+        <div class="logo-scan"></div>
+      </div>
+    </h1>
+
+    <!-- Menu Hamburger para Mobile -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h2 class="glitch">INOVAÇÃO DIGITAL</h2>
+    <p class="fade-in">Tecnologia, IA e experiência futurista</p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects" class="projects reveal">
+    <div class="card hologram">
+      <h3>IA Platform</h3>
+      <p>Soluções inteligentes</p>
+    </div>
+
+    <div class="card hologram">
+      <h3>UX Futurista</h3>
+      <p>Experiência imersiva</p>
+    </div>
+
+    <div class="card hologram">
+      <h3>Cloud System</h3>
+      <p>Infraestrutura moderna</p>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contact" class="contact reveal">
+    <h2 class="neon">Contato</h2>
+    <button class="btn-neon">Falar com especialista</button>
+  </section>
+
+  <!-- HOLOGRAMA -->
+  <div id="holo-widget">
+    <div id="holo-bubble">
+      <div class="holo-bubble-label">▶ ASSISTENTE HOLO</div>
+      <div id="holo-msg-text"><span class="holo-cursor"></span></div>
+    </div>
+    <div id="holo-scene">
+      <div class="holo-ring holo-ring-1"></div>
+      <div class="holo-ring holo-ring-2"></div>
+      <div class="holo-ring holo-ring-3"></div>
+      <div class="holo-beam"></div>
+      <div id="holo-figure">
+        <div class="holo-glitch-line"></div>
+        <div class="holo-glitch-line"></div>
+        <div id="vader-3d-container"></div>
+      </div>
+      <div id="holo-particles"></div>
+      <div class="holo-platform"></div>
+      <div class="holo-scanlines"></div>
+      <div class="holo-status">HOLO-PROJ v2.4 ◆ ATIVO</div>
+    </div>
+    <div class="holo-corners">
+      <span class="hc tl"></span><span class="hc tr"></span>
+      <span class="hc bl"></span><span class="hc br"></span>
+    </div>
+    <button id="holo-toggle" title="Minimizar" aria-label="Minimizar widget">−</button>
+    <button id="holo-start-btn">INICIAR</button>
+  </div>
+
+  <!-- ÁUDIO -->
+  <audio id="holo-audio" src="Holograma.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
